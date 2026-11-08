@@ -1,0 +1,165 @@
+import type { Experience } from "@/domain/types";
+import { placeholder } from "@/lib/placeholders";
+
+import { legacyDotNetStack, meliEngineeringStack } from "./constants";
+
+/** Orden cronológico inverso (más reciente primero). */
+export const experienceItems: Experience[] = [
+  {
+    id: "meli-senior",
+    company: "Mercado Libre",
+    companyUrl: "https://www.linkedin.com/company/mercadolibre",
+    role: "Senior Software Engineer IT",
+    period: "Ene 2025 — Presente",
+    location: "Bogotá, Distrito Capital, Colombia",
+    employmentType: "Remoto",
+    isCurrent: true,
+    highlights: [
+      "Liderazgo del desarrollo de iniciativas de gestión de contratos y configuraciones para usuarios vendedores dentro de la plataforma de Mercado Libre.",
+      "Diseño y evolución del versionamiento de contratos entre Mercado Libre y los vendedores, con trazabilidad de cada cambio y vigencia.",
+      "Soluciones de autogestión para que los vendedores consulten, comprendan y den seguimiento a los contratos asociados a compras de productos y servicios.",
+    ],
+    achievements: [
+      placeholder("logros medibles en Mercado Libre (período actual)"),
+    ],
+    technologies: meliEngineeringStack,
+  },
+  {
+    id: "meli-engineer",
+    company: "Mercado Libre",
+    companyUrl: "https://www.linkedin.com/company/mercadolibre",
+    role: "Software Engineer",
+    period: "Mar 2022 — Feb 2025",
+    employmentType: "Jornada completa",
+    highlights: [
+      "Desarrollo de software en el equipo IT de una plataforma de comercio y servicios financieros a escala regional.",
+    ],
+    achievements: [
+      placeholder("logros medibles en Mercado Libre (Software Engineer)"),
+    ],
+    technologies: meliEngineeringStack,
+  },
+  {
+    id: "stefanini-senior",
+    company: "Stefanini Sysman",
+    companyUrl: "https://www.linkedin.com/company/sysman-s-a-s-",
+    role: "Senior Software Developer",
+    period: "Dic 2020 — Mar 2022",
+    location: "Paipa, Boyacá, Colombia",
+    employmentType: "Jornada completa",
+    highlights: [
+      "Desarrollo senior de soluciones de software para la organización.",
+    ],
+    achievements: [placeholder("logros cuantificables en Stefanini Sysman")],
+    technologies: ["Java", "Git", "GitHub", "GitLab", "SQL Server"],
+  },
+  {
+    id: "stefanini-dev",
+    company: "Stefanini Sysman",
+    companyUrl: "https://www.linkedin.com/company/sysman-s-a-s-",
+    role: "Desarrollador de Software",
+    period: "Feb 2018 — Mar 2022",
+    location: "Paipa, Boyacá, Colombia",
+    highlights: [
+      "Planear la ejecución de desarrollos según prioridades del área de Infraestructura Tecnológica e Investigación, Desarrollo e Innovación.",
+      "Analizar y diseñar piezas de software bajo plataforma definida y estándares de desarrollo.",
+      "Controlar cambios y mejoras de software para minimizar impacto en producción.",
+      "Diseñar, probar y preparar lógica y códigos para operación.",
+      "Analizar documentos, archivos, reportes y aplicaciones del flujo de trabajo.",
+      "Validar requerimientos frente a fichas técnicas y normatividad aplicable.",
+      "Garantizar calidad del producto en análisis, diseño y desarrollo.",
+      "Mantener conocimiento actualizado en lenguajes, métodos de codificación y requisitos de operación.",
+    ],
+    achievements: [placeholder("logros cuantificables como desarrollador en Stefanini Sysman")],
+    technologies: ["Java", "Git", "GitHub", "GitLab"],
+  },
+  {
+    id: "cenis-instructor",
+    company: "Instituto Cenis de Colombia",
+    role: "Instructor de informática",
+    period: "Feb 2018 — Mar 2022",
+    location: "Tunja, Boyacá, Colombia",
+    employmentType: "Profesional independiente",
+    highlights: [
+      "Instructor de informática en contexto educativo.",
+      "Compartí conocimiento técnico y tecnológico para el crecimiento de otros profesionales.",
+    ],
+    achievements: [
+      "Formación y acompañamiento de aprendices en competencias de informática.",
+    ],
+    technologies: [placeholder("herramientas y temáticas impartidas")],
+  },
+  {
+    id: "dane-admin",
+    company: "Departamento Administrativo Nacional de Estadística (DANE)",
+    role: "Administrador de sistemas",
+    period: "Abr 2017 — Dic 2017",
+    location: "Tunja, Boyacá, Colombia",
+    highlights: [
+      "Administración de sistemas en el contexto de operaciones del DANE.",
+    ],
+    achievements: [placeholder("logros en DANE — administrador de sistemas")],
+    technologies: ["Windows", "Linux", "Bases de datos"],
+  },
+  {
+    id: "ebsa-sistemas",
+    company: "EBSA — Empresa de Energía de Boyacá",
+    role: "Profesional de sistemas",
+    period: "May 2016 — Mar 2017",
+    location: "Tunja, Boyacá, Colombia",
+    highlights: [
+      "Soporte y gestión de sistemas en empresa del sector energético.",
+    ],
+    achievements: [placeholder("logros en EBSA")],
+    technologies: [placeholder("stack en EBSA")],
+  },
+  {
+    id: "andiautos",
+    company: "Centro de enseñanza ANDIAUTOS SAS",
+    role: "Desarrollador de software",
+    period: "Oct 2015 — May 2016",
+    location: "Tunja, Boyacá, Colombia",
+    highlights: [
+      "Análisis y especificación de requerimientos para soluciones del negocio.",
+      "Desarrollo de aplicaciones de gestión (usuarios, clientes, alertas SOAT y revisión técnico-mecánica).",
+      "Gestión de horarios, matrículas, contratos, reportes y presencia web.",
+      "Apoyo informático en redes y hardware.",
+    ],
+    achievements: [
+      "Sistemas standalone y web para centros automotrices que permanecen en funcionamiento (ver Proyectos).",
+    ],
+    technologies: [...legacyDotNetStack, "Java", "Angular", "Microservicios", "MySQL"],
+  },
+  {
+    id: "dane-analista",
+    company: "Departamento Administrativo Nacional de Estadística (DANE)",
+    role: "Analista de información",
+    period: "Ago 2015 — Dic 2015",
+    location: "Tunja, Boyacá, Colombia",
+    highlights: [
+      "Apoyo a la gestión del análisis de información para investigaciones de índices de costos de transporte (ICTIP e ICTC).",
+      "Criterios de selección para muestras de verificación.",
+      "Envío de información a la central del DANE según cronogramas.",
+      "Control de cobertura de registro de investigaciones asignadas.",
+      "Respaldo diario de información.",
+      "Carga de información en DMC para zonas de recolección y precarga cuando aplicaba.",
+      "Mantenimiento de bases de datos asignadas.",
+      "Reporte de incidencias de software en las investigaciones.",
+    ],
+    achievements: [placeholder("logros medibles como analista en DANE")],
+    technologies: ["Bases de datos", "Herramientas DANE", "Windows"],
+  },
+  {
+    id: "tecol",
+    company: "Tecnología Electrónica Automotriz de Colombia (TECOL)",
+    role: "Desarrollador",
+    period: "Ene 2013 — Jul 2015",
+    location: "Tunja, Boyacá, Colombia",
+    highlights: [
+      "Análisis y especificación de requerimientos para soluciones del negocio.",
+      "Aplicaciones de metrología en Java con MySQL y reportes con JasperReports.",
+    ],
+    achievements: [placeholder("logros medibles en TECOL")],
+    technologies: ["Java", "MySQL", "JasperReports"],
+  },
+];
