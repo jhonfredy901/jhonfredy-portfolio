@@ -41,7 +41,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-border/60 py-4 text-center text-xs text-muted-foreground">
-        © {year} {siteConfig.author.name}. Construido con Next.js y Tailwind CSS.
+        © {year} {siteConfig.author.name}.
       </div>
     </footer>
   );
