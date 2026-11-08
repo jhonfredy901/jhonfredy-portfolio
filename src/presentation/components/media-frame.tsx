@@ -1,7 +1,8 @@
 import Image from "next/image";
 
-import { cn } from "@/lib/utils";
+import { withAssetPath } from "@/lib/asset-path";
 import { isPlaceholder } from "@/lib/placeholders";
+import { cn } from "@/lib/utils";
 
 type MediaFrameProps = {
   src: string;
@@ -41,7 +42,7 @@ export function MediaFrame({
       )}
     >
       <Image
-        src={src}
+        src={withAssetPath(src)}
         alt={alt}
         fill
         className="object-cover"

@@ -8,8 +8,9 @@ import { Mail, MapPin, Sparkles } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import type { Profile } from "@/domain/types";
-import { cn } from "@/lib/utils";
+import { withAssetPath } from "@/lib/asset-path";
 import { isPlaceholder } from "@/lib/placeholders";
+import { cn } from "@/lib/utils";
 import { GitHubIcon, LinkedInIcon } from "@/presentation/components/social-icons";
 
 type HeroContentProps = {
@@ -155,7 +156,7 @@ export function HeroContent({ hero, contact }: HeroContentProps) {
             <div className="absolute -inset-px rounded-3xl bg-gradient-to-br from-primary/50 via-secondary/25 to-accent/40 opacity-90" />
             <div className="relative overflow-hidden rounded-[1.35rem] bg-background ring-1 ring-white/10">
               <Image
-                src={hero.photo.src}
+                src={withAssetPath(hero.photo.src)}
                 alt={hero.photo.alt}
                 width={640}
                 height={800}
