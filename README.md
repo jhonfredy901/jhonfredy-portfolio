@@ -1,6 +1,6 @@
 # Portfolio — Jhon Fredy Hernández Castro
 
-Aplicación web de portfolio y CV profesional con **Next.js 15**, **TypeScript**, **Tailwind CSS** y export estático (GitHub Pages / Vercel).
+Sitio de portfolio y CV con **Next.js**, **TypeScript**, **Tailwind CSS** y export estático (GitHub Pages / Vercel).
 
 ## Requisitos
 
@@ -11,40 +11,19 @@ Aplicación web de portfolio y CV profesional con **Next.js 15**, **TypeScript**
 
 ```bash
 npm install
-npm run clean   # si ves errores 500 o manifests corruptos
 npm run dev
 ```
 
-Abre [http://localhost:3000](http://localhost:3000). Si el puerto está ocupado, detén procesos anteriores o usa el puerto que indique la consola.
+Abre [http://localhost:3000](http://localhost:3000). Si aparecen errores de manifests, ejecuta `npm run clean` y vuelve a iniciar el servidor.
 
-## Build y export
+## Build
 
 ```bash
-npm run build   # genera la carpeta out/ (sitio estático)
-npm run export  # alias de build
+npm run build
 ```
 
-Para **GitHub Pages** con Project Pages, define `NEXT_PUBLIC_BASE_PATH` (nombre del repo) antes del build.
+Genera la carpeta `out/` para despliegue estático. En **GitHub Pages** (Project Pages), define `NEXT_PUBLIC_BASE_PATH` con el nombre del repositorio antes del build.
 
-## Scripts útiles
+## Contenido
 
-| Script        | Descripción                          |
-|---------------|--------------------------------------|
-| `npm run lint` | ESLint                              |
-| `npm run format` | Prettier                          |
-| `npm run dev:turbo` | Dev con Turbopack (opcional)   |
-
-## Arquitectura
-
-Ver `docs/ARCHITECTURE.md` y `docs/DESIGN.md`.
-
-Datos del perfil: `src/data/profile/`. Edita contenido sin tocar la UI.
-
-## Fases del proyecto
-
-1. Arquitectura — ✅  
-2. Diseño UI — ✅  
-3. Componentes y pulido — ✅  
-4. GitHub API — pendiente  
-5. SEO avanzado — pendiente  
-6. Optimización — pendiente
+Los datos del perfil están en `src/data/profile/`. La estructura del proyecto se documenta en `docs/ARCHITECTURE.md` y `docs/DESIGN.md`.
